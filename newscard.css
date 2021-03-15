@@ -1,0 +1,61 @@
+.newscard{
+    position: relative;
+    width: 284px;
+    height: 213px;
+    //background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    display: inline-block;
+    z-index: 0;
+}
+
+.newscard .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 244px;
+    transition: 0.5s;
+}
+
+.newscard:hover .img-box{
+    opacity: 0.5;
+}
+
+.newscard .img-box img{
+    width: 100%;
+}
+
+.newscard .content{
+    position: absolute;
+    width: 100%;
+    height: 213px;
+    bottom: -150px;
+    padding: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    //background: linear-gradient(0deg, #fff, #fff, #fff, #fff, transparent);
+	background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) );
+}
+
+.newscard .content h4{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    height: 45px;
+}
+
+.newscard .content p{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.newscard:hover .content{
+    bottom: 0;
+}
+

@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /404.htm
+
+
+
+User-agent: Googlebot
+
+Disallow: /404.htm

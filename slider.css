@@ -1,0 +1,118 @@
+@media (max-width: 320px) {
+    .slide {
+        max-height: 165px;
+
+    }
+}
+
+@media (min-width: 321px) {
+    .slide {
+        max-height: 165px;
+    }
+}
+
+@media (min-width: 360px){
+    .slide {
+    max-height: 186px;
+    }
+}
+
+@media (min-width: 750px){
+    .slide {
+        max-height: 371px;
+    }
+}
+
+@media (min-width: 1024px){
+    .slide {
+        max-height: 556px;
+    }
+}
+
+@media (min-width: 1340px){
+    .slide {
+        max-height: 675px;
+    }
+}
+
+.slider {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    //background-color: rgba(241, 243, 244, 1);
+}
+
+.slide {
+    display: block;
+    margin: auto;
+	transition: .2s;
+}
+
+.prev {
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .2s;
+	transform: scaleX(-1);
+    background-image: url("next.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.next {
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .2s;
+    background-image: url("next.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slider:hover .prev { opacity: 1; }
+.slider:hover .next { opacity: 1; }
+
+.nav-dots {
+	display: block; 
+    position: absolute;
+    left: 0;
+    right: 0;
+	bottom: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.nav-dot {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+	margin-left: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.8);
+    color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.nav-dot.active {
+    width: 12px;
+    height: 12px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
